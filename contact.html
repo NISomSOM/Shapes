@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Geometric Shapes and Applications</title>
+    <link rel="stylesheet" href="homer.css"/>
+    <style>
+        a { color: aliceblue; margin:10px; text-decoration: none; }
+        a:hover { color: yellow; text-decoration: underline; }
+        .thank-you { display: none; font-size: 18px; color: green; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div id="datetime" class="date"></div>
+    <div class="Mainbox">
+        <div class="header">
+            <h1>Geometric Shapes and Applications</h1>
+            <div class="logoutbutton">
+                <form action="login.html">
+                    <button type="submit">Logout</button>
+                </form>
+            </div>
+        </div>
+        <div class="navbar">
+             <div>
+                <a href="introduction.html">Introduction</a>
+                <a href="2d-shapes.html">2D Shapes</a>
+                <a href="3d-shapes.html">3D Shapes</a>
+                <a href="nature.html">Shapes in Nature</a>
+                <a href="architecture.html">Architecture</a>
+                <a href="art-design.html">Art & Design</a>
+                <a href="math-applications.html">Math Applications</a>
+                <a href="quiz.html">Quiz</a>
+                <button class="react" onclick="window.location.href='http://localhost:5173/';">React</button>
+            </div>
+            <button class="darkmodetoggle" id="dark-mode-toggle">Dark Mode</button>
+        </div>
+        <marquee class="word">
+            <p>Word of the day: Squircle - A shape intermediate between a Square and a Circle</p>
+        </marquee>
+        <div class="page">
+            <h2><center>About Us</center></h2>
+            <p>Geometric Shapes and Applications is a project website created by M.Nisith. This website aims to provide information about various geometric shapes, their properties, and real-world applications. From 2D shapes like squares and circles to 3D shapes like cubes and spheres, this website covers a wide range of topics related to geometry.</p>
+            
+            <h2><center>Have a feedback for us?</center></h2>
+            <div class="feedback">
+                <form id="feedback-form" style="text-align: center;" onsubmit="submitFeedback(event)">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Name"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                    <label for="feedback">Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Enter feedback here..."></textarea><br><br>
+                    <button type="submit">Submit</button>
+                    <p id="thank-you" class="thank-you">Thank you for your feedback!</p>
+                </form>
+            </div>
+        </div>    
+        <div class="footer">
+            <p>Project website for Geometric Shapes and Applications. Made by M.Nisith.</p>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+    <script src="jav.js"></script>
+</body>
+</html>

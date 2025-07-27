@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="peter.css"/>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+        .header {
+            background: linear-gradient(90deg, #d90429, #ff5733);
+            padding: 50px 20px;
+            text-align: center;
+            width: 190%;
+            color: #fff;
+            font-size: 2em;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }  
+        select, input {
+            font-size: 1.2rem;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function Navbar() {
+            return (
+                <div className="navbar">
+                    <a href="react1.html">Geometry Portal</a>
+                    <a href="react2.html">Shapes Quiz</a>
+                    <a href="react3.html">Area Calc</a>
+                    <div className="navbar-bottom">
+                        <JSButton />
+                    </div>
+                </div>
+            );
+        }
+
+        function JSButton() {
+            const handleRedirect = () => {
+                window.location.href = "introduction.html";
+            };
+        
+            return (
+                <button className="javascript" onClick={handleRedirect}>
+                    Javascript
+                </button>
+            );
+        }
+        
+
+        function AreaCalculator() {
+            const [shape, setShape] = React.useState("square");
+            const [dimension1, setDimension1] = React.useState("");
+            const [area, setArea] = React.useState(null);
+            
+            const calculateArea = () => {
+                let result = 0;
+                if (shape === "square") {
+                    result = dimension1 * dimension1;
+                } else if (shape === "circle") {
+                    result = Math.PI * Math.pow(dimension1, 2);
+                }
+                setArea(result.toFixed(2));
+            };
+            
+            return (
+                <div className="content">
+                    <label>
+                        Select shape:
+                        <select value={shape} onChange={(e) => setShape(e.target.value)}>
+                            <option value="square">Square</option>
+                            <option value="circle">Circle</option>
+                        </select>
+                    </label>
+                    <br/>
+                    <input 
+                        type="number" 
+                        placeholder={shape === "circle" ? "Enter radius" : "Enter side length"} 
+                        onChange={(e) => setDimension1(e.target.value)}
+                    />
+                    <br/>
+                    <button className="submit-button" onClick={calculateArea}>Calculate</button>
+                    {area !== null && <h2>Area: {area}</h2>}
+                </div>
+            );
+        }
+
+        function App() {
+            return (
+                <div>
+                    <Navbar />
+                    <div className="content">
+                        <div className="header">Area Calculator</div>
+                        <div className="page">
+                            <AreaCalculator />
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+</body>
+</html>

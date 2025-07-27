@@ -1,0 +1,334 @@
+*{
+    transition: background-color 0.1s, color 0.1s;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right, #e0f7f7, #63d5d5 );
+}
+
+.login{
+    width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.login h1{
+    color: #00796b;
+    margin-bottom: 20px;
+}
+.login label{
+    display: block;
+    color: #004d40;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.login input{
+    width: 380px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #b2dfdb;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.login input:focus{
+    outline:none;
+    border-color: #00796b;
+    box-shadow: 0 0 4px rgba(0, 121, 107, 0.4);
+}
+.login button{
+    width: 400px;
+    padding: 10px;
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login button:hover{
+    background-color: #004d40;
+}
+
+.logoutbutton button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width:60px;
+    padding:5px;
+    background-color: #264653;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.logoutbutton button:hover{
+    background-color: #2a9d8f;
+}
+
+.Mainbox{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.header{
+    background-color: #2a9d8f;
+    color: aliceblue;
+    text-align: left;
+    padding: 10px;
+    height: 100px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #264653;
+    color: aliceblue;
+    text-align: left;
+    padding:10px;
+}
+
+
+.date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.darkmodetoggle{
+    padding: 5px 12px;
+    font-size: 14px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.darkmodetoggle:hover {
+    background-color: #666;
+}
+
+.react{
+    padding: 5px 12px;
+    font-size: 14px;
+    background-color: #ffdd00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 420px;
+}
+
+.react:hover {
+    background-color: #fea900;
+}
+
+.word{
+    margin-top: 15px;
+    direction:"left";
+    background-color: greenyellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.page{
+    border: 5px;
+    margin:60px;
+    margin-top: 15px;
+    padding:20px;
+    padding-bottom: 30px;
+    border-style: solid;
+    border-color: rgb(26, 235, 197);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #eef6f9;  
+}
+
+.footer{
+    background-color: #2a9d8f;
+    color:aliceblue;
+    text-align: center;
+    margin-top: 80px;
+    padding:2px;
+}
+
+h1{
+    
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 36px;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+    
+}
+
+h2{
+    color: #264653;
+}
+
+.quote{
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 5px solid #2a9d8f;
+    font-style: italic;
+    color: gray;
+}
+
+.quiz{
+    padding-right: 500px;
+    padding-left: 50px;
+}
+
+.quiz h1{
+    color:#004d40;
+}
+
+.feedback input{
+    border: 2px solid #40768b;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.feedback input:focus{
+    outline:none;
+    border-color: #00796b;
+    box-shadow: 0 0 4px rgba(0, 121, 107, 0.4);
+}
+.feedback textarea{
+    border: 2px solid #40768b;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.feedback textarea:focus{
+    outline:none;
+    border-color: #00796b;
+    box-shadow: 0 0 4px rgba(0, 121, 107, 0.4);
+}
+.feedback button{
+    width: 80px;
+    height:25px;
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.feedback button:hover{
+    background-color: #004d40;
+}
+
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;           
+}
+.dark-mode .Mainbox {
+    background-color: #121212;
+}
+.dark-mode .header{
+    background-color: #121111;
+}
+.dark-mode .navbar, .footer{
+    background-color: #162329;
+}
+.dark-mode a {
+    color: #bb86fc;
+}
+.dark-mode .page {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border-color: #bb86fc;
+}
+
+.dark-mode .date {
+    color: white;
+    background: rgba(47, 28, 57, 0.7);
+}
+
+.dark-mode .quote{
+    background: #383232;
+    border-left: 5px solid #bb86fc;
+    color: #e0e0e0;
+}
+
+.dark-mode h2{
+    color: #a202b4;
+}
+
+.dark-mode .word{
+    background-color: #8d478f;
+}
+
+.dark-mode .logoutbutton button{
+    background-color: #2e1a39;
+    color: aliceblue;
+
+}
+.dark-mode .logoutbutton button:hover{
+    background-color: #692f80;
+}
+
+.dark-mode .quiz h1{
+    color: #a202b4;
+}
+
+.dark-mode .quiz p{
+    color: #a202b4;
+}
+
+.dark-mode .feedback button{
+    background-color: #2e1a39;
+}
+.dark-mode .feedback button:hover{
+    background-color: #692f80;
+}
+
+.dark-mode .applications th{
+    background-color: #8d478f !important;
+    color: rgb(255, 185, 226) !important;
+}
+
+.dark-mode .applications td{
+    background-color: black !important;
+}
+
+.dark-mode .react{
+    padding: 5px 12px;
+    font-size: 14px;
+    background-color: #ffdd006e;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 420px;
+}
+
+.dark-mode .react:hover {
+    background-color: #fea900;
+}
+

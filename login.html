@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="homer.css"/>
+    <style>
+        a { color: #00796b; margin:10px; text-decoration: none; }
+        a:hover { color: #004d40;text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="home">
+    <div class="login">
+        <h1>Login</h1>
+        <form action="introduction.html">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+            <p><a href="reg.html">New user? Register</a></p>
+        </form>
+    </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginForm = document.querySelector('form');
+            if (loginForm) {
+                loginForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const username = document.getElementById('username').value.trim();
+                    if (username) {
+                        localStorage.setItem('currentUser', username);
+                        window.location.href = 'introduction.html';
+                    }
+                });
+            }
+        });
+        </script>
+        
+    <script src="jav.js"></script>
+</body>
+</html>

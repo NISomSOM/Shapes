@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+    <head>
+        <title>Geometric Shapes and Applications</title>
+        <link rel="stylesheet" href="homer.css"/>
+        <style>
+            a { color: aliceblue; margin:10px; text-decoration: none; }
+            a:hover { color: yellow;text-decoration: underline; }
+        </style>
+    </head>
+    <body>
+      <div id="datetime" class="date"></div>
+        <div class="Mainbox">
+        <div class="header">
+            <h1>Geometric Shapes and Applications</h1>
+            <div class="logoutbutton">
+                <form action="login.html">
+                <button type="submit">Logout</button>
+                </form>
+            </div>
+        </div>
+        <div class="navbar">
+          <div>
+              <a href="introduction.html">Introduction</a>
+              <a href="2d-shapes.html">2D Shapes</a>
+              <a href="3d-shapes.html">3D Shapes</a>
+              <a href="nature.html">Shapes in Nature</a>
+              <a href="architecture.html">Architecture</a>
+              <a href="art-design.html">Art & Design</a>
+              <a href="math-applications.html">Math Applications</a>
+              <a href="quiz.html">Quiz</a>
+              <button class="react" onclick="window.location.href='http://localhost:5173/';">React</button>
+          </div>
+          <button class="darkmodetoggle" id="dark-mode-toggle">Dark Mode</button>
+      </div>
+        <marquee class="word">
+            <p>Word of the day: Squircle - A shape intermediate between a Square and a Circle</p>
+        </marquee>
+        <div class="page">
+            <div class="quiz">
+                <h1 style="text-decoration: underline; text-align:left;"><strong>Quiz</strong></h1>
+                <form id="quizForm">
+                    <div class="question">
+                        <h2>Q1. How many dimensions do 2D shapes have?</h2>
+                        
+                        <input type="radio" name="q1" value="incorrect">
+                        <label for="q1">One</label>
+                        <br>
+                        <input type="radio" name="q1" value="correct" data-correct-answer="Two">
+                        <label for="q1">Two</label>
+                        <br>
+                        <input type="radio" name="q1" value="incorrect">
+                        <label for="q1">Three</label>
+                        <br>
+                        <input type="radio" name="q1" value="incorrect">
+                        <label for="q1">Four</label>
+                        <br>
+                    </div>
+                
+                    <div class="question">
+                        <h2>Q2. How many dimensions do 3D shapes have?</h2>
+                        <input type="radio" name="q2" value="incorrect">
+                        <label for="q2">One</label>
+                        <br>
+                        <input type="radio" name="q2" value="incorrect">
+                        <label for="q2">Two</label>
+                        <br>
+                        <input type="radio" name="q2" value="correct" data-correct-answer="Three">
+                        <label for="q2">Three</label>
+                        <br>
+                        <input type="radio" name="q2" value="incorrect">
+                        <label for="q2">Four</label>
+                        <br>
+                    </div>
+                
+                    <div class="question">
+                        <h2>Q3. Which is NOT a 2D shape?</h2>
+                        <input type="radio" name="q3" value="incorrect">
+                        <label for="q3">Circle</label>
+                        <br>
+                        <input type="radio" name="q3" value="correct" data-correct-answer="Cube">
+                        <label for="q3">Cube</label>
+                        <br>
+                        <input type="radio" name="q3" value="incorrect">
+                        <label for="q3">Rectangle</label>
+                        <br>
+                        <input type="radio" name="q3" value="incorrect">
+                        <label for="q3">Square</label>
+                        <br>
+                    </div>
+                
+                    <div class="question">
+                        <h2>Q4. Which is not a 3D shape?</h2>
+                        <input type="radio" name="q4" value="incorrect">
+                        <label for="q4">Cuboid</label>
+                        <br>
+                        <input type="radio" name="q4" value="incorrect">
+                        <label for="q4">Cube</label>
+                        <br>
+                        <input type="radio" name="q4" value="correct" data-correct-answer="Triangle">
+                        <label for="q4">Triangle</label>
+                        <br>
+                        <input type="radio" name="q4" value="incorrect">
+                        <label for="q4">Pyramid</label>
+                        <br>
+                    </div>
+                
+                    <div class="question">
+                        <h2>Q5. Which of the following are shapes in nature? (Select all that apply)</h2>
+                        <input type="checkbox" name="q5" value="correct" data-correct-answer="Hexagon">
+                        <label for="q5">Hexagon</label>
+                        <br>
+                        <input type="checkbox" name="q5" value="correct" data-correct-answer="Spirals">
+                        <label for="q5">Spirals</label>
+                        <br>
+                        <input type="checkbox" name="q5" value="correct" data-correct-answer="Fractals">
+                        <label for="q5">Fractals</label>
+                        <br>
+                        <input type="checkbox" name="q5" value="incorrect">
+                        <label for="q5">Cake</label>
+                        <br>
+                    </div>
+                
+                    <div class="question">
+                        <h2>Q6.What's the area of a square?</h2>
+                        <input type="radio" name="q6" value="correct" data-correct-answer="Side²">
+                        <label for="q6">Side²</label>
+                        <br>
+                        <input type="radio" name="q6" value="incorrect">
+                        <label for="q6">2 x (L + B)</label>
+                        <br>
+                        <input type="radio" name="q6" value="incorrect">
+                        <label for="q6">π x r²</label>
+                        <br>
+                        <input type="radio" name="q6" value="incorrect">
+                        <label for="q6">None of the above</label>
+                        <br>
+                    </div>
+                
+                    <div class="question">
+                        <h2>Q7. What's the volume of a cube?</h2>
+                        <input type="radio" name="q7" value="incorrect">
+                        <label for="q7">⁴⁄₃ x π x r³</label>
+                        <br>
+                        <input type="radio" name="q7" value="incorrect">
+                        <label for="q7">⅓ x SA x H</label>
+                        <br>
+                        <input type="radio" name="q7" value="correct" data-correct-answer="Side³">
+                        <label for="q7">Side³</label>
+                        <br>
+                        <input type="radio" name="q7" value="incorrect">
+                        <label for="q7">None of the above</label>
+                        <br>
+                    </div>
+                
+                    <div class="question">
+                        <h2>Q8. Which of the following is NOT an application of geometry?</h2>
+                        <input type="radio" name="q8" value="incorrect">
+                        <label for="q8">Measurement</label>
+                        <br>
+                        <input type="radio" name="q8" value="incorrect">
+                        <label for="q8">Coordinate Geometry</label>
+                        <br>
+                        <input type="radio" name="q8" value="correct" data-correct-answer="Superman">
+                        <label for="q8">Superman</label>
+                        <br>
+                        <input type="radio" name="q8" value="incorrect">
+                        <label for="q8">Calculus</label>
+                        <br>
+                    </div>
+                
+                    <div class="question">
+                        <h2>Q9. Which of the following are iconic examples of geometric architecture? (Select all that apply)</h2>
+                        <input type="checkbox" name="q9" value="correct" data-correct-answer="Pyramids of Giza">
+                        <label for="q9">Pyramids of Giza</label>
+                        <br>
+                        <input type="checkbox" name="q9" value="incorrect">
+                        <label for="q9">Pacific Ocean</label>
+                        <br>
+                        <input type="checkbox" name="q9" value="correct" data-correct-answer="The Taj Mahal">
+                        <label for="q9">The Taj Mahal</label>
+                        <br>
+                        <input type="checkbox" name="q9" value="correct" data-correct-answer="Burj Khalifa">
+                        <label for="q9">Burj Khalifa</label>
+                        <br>
+                    </div>
+        
+                    <div class="question">
+                        <h2>Q10. What is the role of Geometry in art and design?</h2>
+                        <textarea name="q10" rows="3" cols="40" placeholder="Type your answer here." style="font-size: 22px; padding: 10px 20px;" data-correct-answer="Geometry provides structure, proportion, symmetry, and balance in art and design. It helps create visually appealing compositions through the use of shapes, patterns, and spatial relationships."></textarea>
+                    </div>
+        
+                    <br>
+                    <input type="submit" value="Submit" style="font-size: 12px; padding: 10px 20px;">
+                    <input type="reset" value="Reset" style="font-size: 12px; padding: 10px 20px;">
+                        
+                </form>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <p> Project website for Geometric Shapes and Applications. Made by M.Nisith.</p>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        </div>
+        <script src="jav.js"></script>
+    </body>
+    </html>

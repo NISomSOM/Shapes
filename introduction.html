@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>Geometric Shapes and Applications</title>
+    <link rel="stylesheet" href="homer.css"/>
+    <style>
+        a { color: aliceblue; margin:10px; text-decoration: none; }
+        a:hover { color: yellow; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div id="datetime" class="date"></div>
+    <div class="Mainbox">
+        <div class="header">
+            <h1>Geometric Shapes and Applications</h1>
+            <div class="logoutbutton">
+                <form action="login.html">
+                    <button type="submit">Logout</button>
+                </form>
+            </div>
+        </div>
+        <div class="navbar">
+            <div>
+                <a href="introduction.html">Introduction</a>
+                <a href="2d-shapes.html">2D Shapes</a>
+                <a href="3d-shapes.html">3D Shapes</a>
+                <a href="nature.html">Shapes in Nature</a>
+                <a href="architecture.html">Architecture</a>
+                <a href="art-design.html">Art & Design</a>
+                <a href="math-applications.html">Math Applications</a>
+                <a href="quiz.html">Quiz</a>
+                <button class="react" onclick="window.location.href='http://localhost:5173/';">React</button>
+            </div>
+            <button class="darkmodetoggle" id="dark-mode-toggle">Dark Mode</button>
+            </div>
+            
+        <marquee class="word">
+            <p>Word of the day: Squircle - A shape intermediate between a Square and a Circle</p>
+        </marquee>
+        <div class="page">
+            <h2>Welcome to the World of Geometry</h2>
+            <h3>Explore the fascinating world of geometric shapes and their applications in everyday life. From the beauty of nature to the marvels of architecture, shapes are everywhere!</h3>
+            <div style="display:flex">
+                <div>
+                    <p style="font-size: larger; text-align:justify;">
+                        Geometry is a branch of mathematics that explores the properties, dimensions, and relationships of shapes and spaces. Geometric shapes are the foundation of this fascinating field, encompassing both two-dimensional forms like circles, triangles, and squares, as well as three-dimensional structures like cubes, spheres, and pyramids.
+                    </p>
+                    <ul>
+                        <li><p style="font-size:large; text-align:justify">Geometric shapes are classified into two-dimensional (2D) shapes, which have length and width, and three-dimensional (3D) shapes, which include height or depth.</p></li>
+                        <li><p style="font-size:large; text-align:justify">These shapes are widely used in architecture, engineering, and design, providing the basis for construction, modeling, and innovation.</p></li>
+                        <li><p style="font-size:large; text-align:justify">From ancient art to modern technology, geometry has played a vital role in creating visual harmony and functional designs.</p></li>
+                    </ul>
+                </div>
+                <div style="margin-left: 10px;">
+                    <img src="shapes.png" alt="Geometric Shapes" height="330px" width="310px" border="2">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p> Project website for Geometric Shapes and Applications. Made by M.Nisith.</p>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const welcomeHeading = document.querySelector('.page h2');
+            const username = localStorage.getItem('currentUser');
+        
+            if (welcomeHeading) {
+                if (username) {
+                    welcomeHeading.textContent = `Welcome to the World of Geometry, ${username}!`;
+                } else {
+                    welcomeHeading.textContent = "Welcome to the World of Geometry!";
+                }
+            }
+        
+            const logoutButton = document.querySelector('.logoutbutton button');
+            if (logoutButton) {
+                logoutButton.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    localStorage.removeItem('currentUser');
+                    window.location.href = 'login.html';
+                });
+            }
+        });
+        </script>
+        
+    <script src="jav.js"></script>
+</body>
+</html>
